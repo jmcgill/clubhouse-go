@@ -36,6 +36,7 @@ type Epic struct {
 	Position    int64             `json:"position"`
 	State       string            `json:"state"`
 	UpdatedAt   time.Time         `json:"updated_at"`
+	ExternalID      string            `json:"external_id"`
 }
 
 // UpdateEpic the body used for ch.EpicUpdate()
