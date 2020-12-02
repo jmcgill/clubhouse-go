@@ -52,6 +52,7 @@ type Story struct {
 	Tasks           []Task      `json:"tasks"`
 	UpdatedAt       string      `json:"updated_at"`
 	WorkflowStateID int64       `json:"workflow_state_id"`
+	ExternalID      string            `json:"external_id"`
 }
 
 type UpdateStory struct {
