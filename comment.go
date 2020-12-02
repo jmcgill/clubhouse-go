@@ -38,6 +38,7 @@ type Comment struct {
 	StoryID    int64     `json:"story_id"`
 	Text       string    `json:"text"`
 	UpdatedAt  time.Time `json:"updated_at"`
+	ExternalID string    `json:"external_id,omitempty"`
 }
 
 //UpdateComment is the body used for ch.CommentUpdate()
